@@ -1,0 +1,27 @@
+.errorMsgnew {
+    min-height: 30px;
+    height: auto;
+    border-radius: 10px;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: red;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: auto;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.age>.errorMsgnew, .country>.errorMsgnew {
+    top: 50px;
+}
+
+.name-input>.errorMsgnew {
+    top: 40px;
+}
+
+.textarea>.errorMsgnew {
+    top: 115px;
+}

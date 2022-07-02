@@ -1,0 +1,11 @@
+input.view {
+    border: none;
+    cursor: default;
+}
+
+.inline-input {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    width: 33%;
+}

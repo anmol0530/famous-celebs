@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.accordion {
+  margin: 2rem auto;
+  border-radius: 10px;
+  border: 1px solid rgb(196, 196, 200);
+  width: 500px;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile {
+  border-radius: 50%;
+  border: 1px solid rgb(196, 196, 200);
+  margin-right: 20px;
+}
+
+.name-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 10px 20px;
+}
+
+.actions img{
+  height: 24px;
+  width: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.desc {
+  height:fit-content;
+  width: 100%;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 140px;
+}
+
+textarea {
+  font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  min-height: 14px;
+  max-height: 100px;
+  border: none;
+}
+
+.textarea.view {
+  position: relative;
+  padding: 0;
+}
+
+.textarea {
+  position: relative;
+}
+
+.inline-input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 15px;
+  width: 30%;
+  position: relative;
+}
+
+.name-input {
+  padding: 0;
+}
+
+.view {
+  border: 0.5px solid white;
+  border-radius: 10px;
+  z-index: -1;
+  padding: 8px 5px;
+}
+
+.edit {
+  border: 0.5px solid rgb(196, 196, 200);
+  border-radius: 10px;
+  padding: 6px 5px;
+}
+
+select.view {
+  -webkit-appearance: none;
+  text-indent: 0px;
+}
+
+.name {
+  font-size: x-large;
+  font-weight: 525;
+  width: fit-content;
+}
+
+.toggle {
+  font-size: 30px;
+}
+
+label {
+  font-size: smaller;
+  color: rgb(118, 121, 121);
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+input, select{
+  font-size: 15px;
+}
+
+.profile {
+  height: 70px;
+  width: 70px;
+}
+
+.age-view {
+  position: relative;
+  z-index: -1;
+} 
+
+.age-view::after {
+  content: 'Years';
+  font-family: sans-serif;
+  width: 1em;
+  height: 1em;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  right: 96px;
+  
+  transform: translateY(-30%);
+}
