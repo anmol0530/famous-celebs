@@ -4,13 +4,14 @@ import { Celebrity } from './Celebrity';
 import "../styles/Celebrities.css";
 import { blackCross, search } from '../images';
 
+const newCelebs = celebrities.map(celeb => {
+    let ageInMilliseconds = new Date() - new Date(celeb.dob);
+    let age = Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365);
+    let name = celeb.first + " " + celeb.last;
+    return { ...celeb, name: name, age: age };
+});
+
 export const Celebrities = () => {
-    const newCelebs = celebrities.map(celeb => {
-        let ageInMilliseconds = new Date() - new Date(celeb.dob);
-        let age = Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365);
-        let name = celeb.first + " " + celeb.last;
-        return { ...celeb, name: name, age: age };
-    });
     const [celebs, setCelebs] = useState(newCelebs);
     const [delPop, setDelPop] = useState(false);
     const [delId, setDelId] = useState();
